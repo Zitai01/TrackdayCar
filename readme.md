@@ -1,22 +1,36 @@
-# TrackdayCar exploring App
+# TrackdayCar App
 
 ## Date: 08/27/2021
 
 ### By:Zitai Huang
 
-[Trello](https://trello.com/b/Rk0PVwJ3/trackdaycarapp)
+[Trello](https://trello.com/b/Rk0PVwJ3/trackdaycarapp) |
+[Github](https://github.com/Zitai01/TrackdayCar) |
+[Linkedin](https://www.linkedin.com/in/zitai-huang/)
+***
+## **Description**
+
+I was in a deep struggle wondering what car should I got when I was trying to buy a car that can be good on track and on public road. There are a lot of things to considerate when you are getting a car for the track, so I build this app in wish to help people getting the right track day car for their need!
+***
+## Getting started
+
+Inside Home page you can find out all the sports car listed under the search bar, each car element should be clickable and direct to it's own page, if you find anycar you like , you can add it to the compare page, there you can compare all the cars you added to see the difference, finally you might find some race tracks near you in the tracks page.
+***
+
+
 ## Frondend ERD
+
 ![alt fronendpic](TrackDayCarfrontend.png)
-
+***
 ## Database ERD
+
+
 ![alt fronendpic](TrackdayCarsBackend.png)
-
-
-
-
-
-
-
+***
+## Technologies used
+React.js , Node.js , Express.js,MongoDB
+,Mongoose,CSS,Javascript,HTML.
+***
 ## MVP
 
 - Be a new repo. Create a new repo in your github and build your project there. DO NOT name your repository Project 2, give it a real name.
@@ -32,7 +46,15 @@
 - Your code should be properly indented, spaced, and within code blocks. DO NOT leave in commented out code that was left unused (bad practice). Comments should be in your code to describe what your functions are doing.
 Be deployed on Heroku
 
-#
+## Additional objective
+
+If all the objective listed before is reached and I some extra time, here is some feature I may add.
+
+* A delet/reset button for compare page
+* Give every car a score on each direction.
+* A couple filter in home.js to filter the carcard for client.
+* Import other APIs to pefects the app.
+* User login and add users to database.
 
 
 
@@ -41,6 +63,4 @@ Be deployed on Heroku
 
 
 ## Thanks
-Author:Zitai Huang
 
-Aug,2021.
