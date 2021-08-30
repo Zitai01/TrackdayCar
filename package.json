@@ -1,0 +1,23 @@
+{
+  "name": "trackdaycar",
+  "version": "1.0.0",
+  "description": "## Date: 08/27/2021",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zitai01/TrackdayCar.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zitai01/TrackdayCar/issues"
+  },
+  "homepage": "https://github.com/Zitai01/TrackdayCar#readme",
+  "dependencies": {
+    "mongoose": "^6.0.2"
+  }
+}
