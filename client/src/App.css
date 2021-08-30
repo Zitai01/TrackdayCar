@@ -1,0 +1,90 @@
+.App {
+  text-align: center;
+}
+.App-header {
+ 
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+ 
+}
+main{
+  background-color: #282c34;
+  height: 65em;
+}
+.logo{
+  margin-left: 20px;
+  font-size: 40px;
+}
+.navright{
+  color: white;
+  margin-right: 20px;
+}
+.links{
+  text-decoration: none;
+  font-size: 25px;
+  color: #eee;
+}
+.navbar{
+  background-color: #282c34;
+display: flex;
+align-items: center;
+justify-content: space-between;
+height: 200px;
+width: 100%;
+}
+
+
+.car-card {
+  padding: 1em;
+  width: 450px;
+  height: 250px;
+  background-size:250px;
+  border-radius: 0.5em;
+  margin: 30px;
+  
+  justify-content: space-around;
+ 
+  color: white;
+  font-family: 'Georgia';
+  cursor: pointer;
+}
+.listings {
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2em;
+}
+.imgs{
+  width: 450px;
+  height: 250px;
+  margin: 20px;
+}
+input {
+  background-color: transparent;
+  margin-top: 20px;
+  border: 3px solid rgb(0, 255, 255);
+  border-radius: 8px;
+  padding: 0.5em 0.2em;
+  width: 500px;
+  transition: all 0.2s;
+  font-size: 1.3rem;
+  color: #eee;
+}
+button {
+  margin-left: 20px;
+  padding: 0.2em 1em;
+  border: 0;
+  border-radius: 4px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.footer{
+  background-color: rgb(0, 255, 255);
+}
+

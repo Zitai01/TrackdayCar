@@ -16,7 +16,7 @@ const main = async () => {
       intro: 'Great car!'
     },
     {
-      model: 'Audi R8',
+      model: '2021 Audi R8',
       photo:
         'https://www.audiusa.com/content/dam/nemo/us/models/R8/R8-Coupe/1920x1080-dimensions/1920x1080_200902_r8-rwd-3_NAR_v01-min.jpg?output-format=webp&downsize=1324px:*',
       brand: 'Audi',
@@ -38,7 +38,7 @@ const main = async () => {
     {
       model: '2021 Toyota Supra',
       photo:
-        'https://www.motortrend.com/uploads/sites/5/2021/02/2021-Toyota-GR-Supra-3-0-Premium-26.jpg?fit=around%7C29:16',
+        'https://media.ed.edmunds-media.com/toyota/gr-supra/2021/oem/2021_toyota_gr-supra_coupe_20_fq_oem_5_1600.jpg',
       brand: 'Toyota',
       price: 43090,
       Performance: '382hp 3400lbs  auto transmission',
