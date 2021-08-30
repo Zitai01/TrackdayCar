@@ -5,7 +5,7 @@ const Comment = new Schema(
     username: { type: String, required: true },
     comments: { type: String, required: true },
     title: { type: String, required: true },
-    car_id: { type: Object, required: true }
+    car_id: { type: String, required: true }
   },
   { timestamps: true }
 )

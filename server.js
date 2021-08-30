@@ -1,4 +1,5 @@
 const { Car, Comment } = require('./models')
+const routes = require('./routers')
 const express = require('express')
 const cors = require('cors')
 const bodyParser = require('body-parser')
@@ -11,6 +12,7 @@ const app = express()
 app.use(cors())
 app.use(bodyParser.json())
 app.use(logger('dev'))
+app.use('/comments', routes)
 
 app.get('/', (req, res) => {
   res.send('This is root!')
