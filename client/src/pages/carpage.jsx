@@ -24,9 +24,17 @@ function CarPage(props){
 
 
     return Car ?(<div>
-        <div>{Car.model}</div>
-        <div><img src={Car.photo} alt="pics" /></div>
+        <div className="carspec">
         
+        <div><img src={Car.photo} alt="pics" /></div>
+        <div>
+        <h1>{Car.model}</h1>
+        <div>{Car.intro}</div>
+        <div>{Car.Performance}</div>
+        <div>Starting at:${Car.price}</div>
+        </div>
+        
+        </div>
         <Comment   Car={Car}  />
     
     </div>):null

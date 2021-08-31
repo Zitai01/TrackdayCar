@@ -5,7 +5,9 @@ function Nav() {
     <nav className="navbar">
         <div className="logo">Track Day Cars</div>
         <div className="navright">
-            <NavLink to="/" ><div className="links">Home</div></NavLink>
+        <NavLink to="/" >Home</NavLink>
+        <div className="links"> </div>
+        <NavLink to="/postcar" >Post your car</NavLink>
 
 
         </div>

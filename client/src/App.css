@@ -20,6 +20,7 @@ main{
   font-size: 40px;
 }
 .navright{
+  display: flex;
   color: white;
   margin-right: 20px;
 }
@@ -31,6 +32,7 @@ h2{
   color: #eee;
 }
 .links{
+  margin: 20px;
   text-decoration: none;
   font-size: 25px;
   color: #eee;
@@ -126,6 +128,12 @@ button {
   font-size: 20px;
   color: #eee;
 }
+.carspec{
+  color: #eee;
+  display: flex;
+  justify-content: space-evenly;
+}
+
 /* .inputcomments{
   
   

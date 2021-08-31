@@ -7,6 +7,7 @@ import axios from 'axios'
 import { useEffect, useState } from 'react'
 import { BASE_URL } from './globle'
 import CarPage from './pages/carpage'
+import PostCar from './pages/postcar'
 function App() {
   const [cars, Setcars] = useState([])
   useEffect(() => {
@@ -37,6 +38,7 @@ function App() {
               <CarPage {...routerProps} cars={cars} />
             )}
           />
+          <Route path="/postcar" component={() => <PostCar />} />
         </Switch>
       </main>
       <Footer></Footer>
