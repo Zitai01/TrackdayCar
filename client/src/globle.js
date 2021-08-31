@@ -17,3 +17,7 @@ export const POSTCOMMENT_URL =
   process.env.NODE_ENV === 'production'
     ? `${window.location.origin}/comments/post`
     : 'http://localhost:3001/comments/post'
+export const POSTCAR_URL =
+  process.env.NODE_ENV === 'production'
+    ? `${window.location.origin}/postcar`
+    : 'http://localhost:3001/postcar'

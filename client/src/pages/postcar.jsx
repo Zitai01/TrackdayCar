@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import axios from 'axios'
-import {POSTCOMMENT_URL} from '../globle'
+import {POSTCAR_URL} from '../globle'
 function PostCar (){
 
     const [PostCarbody,SetPostCarbody]=useState({
@@ -17,7 +17,7 @@ async function postcar(e){
     // e.preventDefault()
      try{
          console.log(PostCarbody)
-     let res = await axios.post(`${POSTCOMMENT_URL}`,PostCarbody,
+     let res = await axios.post(`${POSTCAR_URL}`,PostCarbody,
      {headers:{ 'Content-Type': 'application/json'}})
      console.log(res)}catch(error){
          console.log(error)
