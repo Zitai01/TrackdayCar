@@ -1,5 +1,5 @@
 import Comment from '../components/comment'
-import CommentForm from '../components/commentform'
+
 import React, {useEffect,useState} from 'react'
 
 function CarPage(props){
@@ -19,14 +19,14 @@ function CarPage(props){
           }
         }
         findcar()
-        console.log(Car)
+        
       })
 
 
     return Car ?(<div>
         <div>{Car.model}</div>
         <div><img src={Car.photo} alt="pics" /></div>
-        <CommentForm />
+        
         <Comment   Car={Car}  />
     
     </div>):null

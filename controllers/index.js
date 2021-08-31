@@ -3,6 +3,7 @@ const { Car, Comment } = require('../models')
 const createComment = async (req, res) => {
   try {
     const comment = await new Comment(req.body)
+    console.log(req.body)
     await comment.save()
     return res.status(201).json({
       comment
@@ -17,6 +18,7 @@ const deleteComment = async (req, res) => {
     const { id } = req.params
     const deleted = await Comment.findByIdAndDelete(id)
     if (deleted) {
+      console.log(deleted)
       return res.status(200).send('Comment deleted')
     }
     throw new Error('Comment not found')
