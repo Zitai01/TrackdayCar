@@ -23,6 +23,13 @@ main{
   color: white;
   margin-right: 20px;
 }
+h2{
+  color: white;
+}
+
+.commentHolder{
+  color: #eee;
+}
 .links{
   text-decoration: none;
   font-size: 25px;
