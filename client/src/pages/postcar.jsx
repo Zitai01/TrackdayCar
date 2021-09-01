@@ -41,27 +41,51 @@ const handlepriceChange = (e)=>{
 }
 const handleCatagoryChange = (e)=>{
     let tempbody=PostCarbody
-    tempbody.price=Number.parseInt(e.target.value)
+    tempbody.Catagory=e.target.value
     SetPostCarbody(tempbody)
    
 }
-
-
-
-
+const handlePerformanceChange = (e)=>{
+    let tempbody=PostCarbody
+    tempbody.Performance=e.target.value
+    SetPostCarbody(tempbody)
+   
+}
+const handlebrandChange = (e)=>{
+    let tempbody=PostCarbody
+    tempbody.brand=e.target.value
+    SetPostCarbody(tempbody)
+   
+}
+const handleintroChange = (e)=>{
+    let tempbody=PostCarbody
+    tempbody.intro=e.target.value
+    SetPostCarbody(tempbody)
+   
+}
+const handlephotoChange = (e)=>{
+    let tempbody=PostCarbody
+    tempbody.photo=e.target.value
+    SetPostCarbody(tempbody)
+   
+}
 return <div>
-    <div className="commentform">
+    
 
 <form onSubmit={postcar} className="form">
 <h2>Post your Car</h2> 
 <input  type="text" onChange={handlemodelChange} placeholder="model" />
 <input  type="text" onChange={handlepriceChange} placeholder="price" />
 <input  type="text" onChange={handleCatagoryChange} placeholder="Catagory" />
+<input  type="text" onChange={handlePerformanceChange} placeholder="performance" />
+<input  type="text" onChange={handlebrandChange} placeholder="brand" />
+<input  type="text" onChange={handleintroChange} placeholder="intro" />
+<input  type="text" onChange={handlephotoChange} placeholder="photo" />
     <button>Submit</button>
 </form>
 
 
-</div>
+
 </div>
 }
 export default PostCar
