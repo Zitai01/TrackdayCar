@@ -4,17 +4,18 @@ import {POSTCAR_URL} from '../globle'
 function PostCar (){
 
     const [PostCarbody,SetPostCarbody]=useState({
+        "model": "2021 BMW M4 Competition",
         "Catagory": "luxury sports car",
         "Performance": "503hp 3830lbs 8-speed auto/manuel",
         "brand": "BMW",
-        "createdAt": "2021-08-30T19:58:34.648Z",
+        "price":76500,
         "intro": "Great car!",
-        "model": "2021 BMW M4 Competition",
+        
         "photo": "https://www.carscoops.com/wp-content/uploads/webp/2020/09/2021-bmw-m4-coupe-monaco-1024x555.webp"
 })
 
 async function postcar(e){
-    // e.preventDefault()
+     e.preventDefault()
      try{
          console.log(PostCarbody)
      let res = await axios.post(`${POSTCAR_URL}`,PostCarbody,
@@ -26,12 +27,41 @@ async function postcar(e){
  }
 
 
+ const handlemodelChange = (e)=>{
+    let tempbody=PostCarbody
+    tempbody.model=e.target.value
+    SetPostCarbody(tempbody)
+   
+}
+const handlepriceChange = (e)=>{
+    let tempbody=PostCarbody
+    tempbody.price=Number.parseInt(e.target.value)
+    SetPostCarbody(tempbody)
+   
+}
+const handleCatagoryChange = (e)=>{
+    let tempbody=PostCarbody
+    tempbody.price=Number.parseInt(e.target.value)
+    SetPostCarbody(tempbody)
+   
+}
 
 
 
 
+return <div>
+    <div className="commentform">
+
+<form onSubmit={postcar} className="form">
+<h2>Post your Car</h2> 
+<input  type="text" onChange={handlemodelChange} placeholder="model" />
+<input  type="text" onChange={handlepriceChange} placeholder="price" />
+<input  type="text" onChange={handleCatagoryChange} placeholder="Catagory" />
+    <button>Submit</button>
+</form>
 
 
-return <div></div>
+</div>
+</div>
 }
 export default PostCar
