@@ -8,7 +8,8 @@ function Nav() {
         <NavLink to="/" >Home</NavLink>
         <div className="links"> </div>
         <NavLink to="/postcar" >Post your car</NavLink>
-
+        <div className="links"> </div>
+        <NavLink to="/tracks" >Tracks</NavLink>
 
         </div>
     </nav>

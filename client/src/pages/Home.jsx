@@ -22,10 +22,10 @@ function Home(props){
     return (
         <div>
           <div>
-              <form >
+              {/* <form >
             <input type="text" />
             <button>Search</button>
-              </form>
+              </form> */}
             
           </div>
           <div className="listings">{carListings}</div>

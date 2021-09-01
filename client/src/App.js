@@ -8,6 +8,7 @@ import { useEffect, useState } from 'react'
 import { BASE_URL } from './globle'
 import CarPage from './pages/carpage'
 import PostCar from './pages/postcar'
+import Tracks from './pages/Tracks'
 function App() {
   const [cars, Setcars] = useState([])
   useEffect(() => {
@@ -39,6 +40,7 @@ function App() {
             )}
           />
           <Route path="/postcar" component={() => <PostCar />} />
+          <Route path="/tracks" component={() => <Tracks />} />
         </Switch>
       </main>
       <Footer></Footer>
