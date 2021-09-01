@@ -5,7 +5,7 @@ const cors = require('cors')
 const bodyParser = require('body-parser')
 const logger = require('morgan')
 const PORT = process.env.PORT || 3001
-//const db = require('./db')
+const db = require('./db')
 
 const app = express()
 
@@ -26,19 +26,6 @@ app.get('/api/comments', async (req, res) => {
   res.json(comments)
 })
 
-app.post('/postcar', async (req, res) => {
-  try {
-    const car = await new Car(req.body)
-    console.log(req.body)
-    await car.save()
-    return res.status(201).json({
-      car
-    })
-  } catch (error) {
-    return res.status(500).json({ error: error.message })
-  }
-})
-
 app.get('/api/cars/:id', async (req, res) => {
   try {
     const { id } = req.params
@@ -49,6 +36,19 @@ app.get('/api/cars/:id', async (req, res) => {
   } catch (e) {
     console.log(e)
     res.send('Car not found!')
+  }
+})
+
+app.post('/postcar', async (req, res) => {
+  try {
+    const car = await new Car(req.body)
+    console.log(req.body)
+    await car.save()
+    return res.status(201).json({
+      car
+    })
+  } catch (error) {
+    return res.status(500).json({ error: error.message })
   }
 })
 
