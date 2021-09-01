@@ -5,12 +5,12 @@ function Nav() {
     <nav className="navbar">
         <div className="logo">Track Day Cars</div>
         <div className="navright">
-        <NavLink to="/" >Home</NavLink>
-        <div className="links"> </div>
-        <NavLink to="/postcar" >Post your car</NavLink>
-        <div className="links"> </div>
-        <NavLink to="/tracks" >Tracks</NavLink>
-
+        
+        <NavLink to="/home" className="navlink" activeClassName="activenavlink" >Home</NavLink>
+        
+        <NavLink to="/postcar" className="navlink" activeClassName="activenavlink" >Post your car</NavLink>
+        
+        <NavLink to="/tracks"  className="navlink" activeClassName="activenavlink" >Tracks</NavLink>
         </div>
     </nav>
     )

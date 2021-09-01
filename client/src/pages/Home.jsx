@@ -21,13 +21,7 @@ function Home(props){
 
     return (
         <div>
-          <div>
-              {/* <form >
-            <input type="text" />
-            <button>Search</button>
-              </form> */}
-            
-          </div>
+          
           <div className="listings">{carListings}</div>
         </div>
     )
