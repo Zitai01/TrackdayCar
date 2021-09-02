@@ -48,12 +48,13 @@ width: 100%;
 
 
 .car-card {
-  padding: 1em;
+  
+  
   width: 450px;
   height: 250px;
   background-size:250px;
   border-radius: 0.5em;
-  margin: 30px; 
+  margin: 50px; 
   justify-content: space-around;
   color: white;
   font-family: 'Georgia';
@@ -87,7 +88,7 @@ width: 100%;
 .imgs{
   width: 450px;
   height: 250px;
-  margin: 20px;
+  border-radius: 3px;
 }
 .bigimgs{
   width: 900px;
@@ -151,10 +152,13 @@ color: turquoise;
 }
 .commentform{
   margin: 20px;
-  border-top:1px solid lightblue;
+  border-top:1px solid #add8e6;
   border-bottom:1px solid lightblue
 }
-
+.QA{
+  font-size: 30px;
+  color: #eee;
+}
 .form{
   display: flex;
   flex-direction: column;

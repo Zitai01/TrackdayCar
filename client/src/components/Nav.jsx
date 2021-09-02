@@ -12,7 +12,7 @@ function Nav() {
         
         <NavLink to="/tracks"  className="navlink" activeClassName="activenavlink" >Tracks</NavLink>
 
-        <NavLink to="/tracks"  className="navlink" activeClassName="activenavlink" >New to track driving?</NavLink>
+        <NavLink to="/newplayers"  className="navlink" activeClassName="activenavlink" >New to track?</NavLink>
         </div>
     </nav>
     )

@@ -10,6 +10,7 @@ import CarPage from './pages/carpage'
 import PostCar from './pages/postcar'
 import Tracks from './pages/Tracks'
 import Welcome from './pages/welcome'
+import NewPlayers from './pages/newplayers'
 function App() {
   const [cars, Setcars] = useState([])
   useEffect(() => {
@@ -43,6 +44,7 @@ function App() {
           />
           <Route path="/postcar" component={() => <PostCar />} />
           <Route path="/tracks" component={() => <Tracks />} />
+          <Route path="/newplayers" component={() => <NewPlayers />} />
         </Switch>
       </main>
       <Footer></Footer>
