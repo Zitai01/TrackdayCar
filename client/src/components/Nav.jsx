@@ -11,6 +11,8 @@ function Nav() {
         <NavLink to="/postcar" className="navlink" activeClassName="activenavlink" >Post your car</NavLink>
         
         <NavLink to="/tracks"  className="navlink" activeClassName="activenavlink" >Tracks</NavLink>
+
+        <NavLink to="/tracks"  className="navlink" activeClassName="activenavlink" >New to track driving?</NavLink>
         </div>
     </nav>
     )

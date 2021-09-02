@@ -93,7 +93,9 @@ width: 100%;
   width: 900px;
 }
 
-
+h1{
+  color: #eee;
+}
 
 input {
   background-color: transparent;
@@ -130,7 +132,8 @@ color: turquoise;
 }
 .commentcard{
   margin: 0 20px 0 20px;
-  border:1px solid lightblue
+ 
+  border-bottom:1px solid lightblue;
 }
 .commentHolder{
   display: flex;
@@ -148,7 +151,8 @@ color: turquoise;
 }
 .commentform{
   margin: 20px;
-  border:1px solid lightblue
+  border-top:1px solid lightblue;
+  border-bottom:1px solid lightblue
 }
 
 .form{
