@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import axios from 'axios'
 import {POSTCOMMENT_URL} from '../globle'
+
 function CommentForm (props){
     const [Postbody,SetPostbody]=useState({
         "username":"Default",
@@ -10,6 +11,9 @@ function CommentForm (props){
 
 
     })
+
+    
+    
 
     async function postcomment(e){
        // e.preventDefault()
@@ -52,7 +56,8 @@ return (
     <h2>Post your comment</h2> 
     <input  type="text" onChange={handlenameChange} placeholder="Username" />
     <input type="text" onChange={handletitleChange} placeholder="Title" />
-    <input type="text" onChange={handlecommentsChange} placeholder="comments" className="inputcomments" />
+    <input type="text" rows={4} onChange={handlecommentsChange} placeholder="comments" className="inputcomments" />
+   
         <button>Submit</button>
     </form>
 

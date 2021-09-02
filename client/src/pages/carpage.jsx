@@ -26,7 +26,7 @@ function CarPage(props){
     return Car ?(<div>
         <div className="carspec">
         
-        <div><img src={Car.photo} alt="pics" /></div>
+        <div><img src={Car.photo} alt="pics" className="bigimgs" /></div>
         <div>
         <h1>{Car.model}</h1>
         <div>{Car.intro}</div>

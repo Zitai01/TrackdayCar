@@ -53,13 +53,22 @@ width: 100%;
   height: 250px;
   background-size:250px;
   border-radius: 0.5em;
-  margin: 30px;
-  
+  margin: 30px; 
   justify-content: space-around;
- 
   color: white;
   font-family: 'Georgia';
   cursor: pointer;
+}
+.track-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 22px;
+  width: 500px;
+  height: 500px;
+  color: #eee;
+  border: 1px solid lightblue;
 }
 .listings {
   display: flex;
@@ -68,11 +77,24 @@ width: 100%;
   flex-wrap: wrap;
   padding: 2em;
 }
+.website{
+  margin:20px 0 20px 0 ;
+}
+.trackimgs{
+  width: 450px;
+  margin: 20px;
+}
 .imgs{
   width: 450px;
   height: 250px;
   margin: 20px;
 }
+.bigimgs{
+  width: 900px;
+}
+
+
+
 input {
   background-color: transparent;
   margin-top: 20px;
