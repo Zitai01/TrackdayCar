@@ -31,6 +31,13 @@ Inside Home page you can find out all the sports car listed under the search bar
 React.js , Node.js , Express.js,MongoDB
 ,Mongoose,CSS,Javascript,HTML.
 ***
+
+## homepage screenshot
+
+![alt homepage](homepage.png)
+
+
+***
 ## MVP
 
 - Be a new repo. Create a new repo in your github and build your project there. DO NOT name your repository Project 2, give it a real name.
@@ -50,7 +57,7 @@ Be deployed on Heroku
 
 If all the objective listed before is reached and I some extra time, here is some feature I may add.
 
-* A delet/reset button for compare page
+
 * Give every car a score on each direction.
 * A couple filter in home.js to filter the carcard for client.
 * Import other APIs to pefects the app.
