@@ -1,7 +1,12 @@
 const mongoose = require('mongoose')
-let MONGODB_URI = 'mongodb://127.0.0.1:27017/carDatabase'
+require('dotenv').config()
+let dbUrl =
+  process.env.NODE_ENV === 'production'
+    ? process.env.MONGODB_URI
+    : 'mongodb://127.0.0.1:27017/carDatabase'
+
 mongoose
-  .connect(MONGODB_URI, {
+  .connect(dbUrl, {
     useUnifiedTopology: true,
     useNewUrlParser: true,
     useFindAndModify: true

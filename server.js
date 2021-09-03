@@ -4,6 +4,7 @@ const express = require('express')
 const cors = require('cors')
 const bodyParser = require('body-parser')
 const logger = require('morgan')
+
 const PORT = process.env.PORT || 3001
 const db = require('./db')
 
@@ -51,6 +52,13 @@ app.post('/postcar', async (req, res) => {
     return res.status(500).json({ error: error.message })
   }
 })
+
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, 'client/build')))
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(`${__dirname}/client/build/index.html`))
+  })
+}
 
 app.listen(PORT, () => {
   console.log(`Express server listening on port ${PORT}`)
