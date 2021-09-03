@@ -15,9 +15,6 @@ app.use(bodyParser.json())
 app.use(logger('dev'))
 app.use('/comments', routes)
 
-app.get('/', (req, res) => {
-  res.send('This is root!')
-})
 app.get('/api/cars', async (req, res) => {
   const cars = await Car.find()
   res.json(cars)
