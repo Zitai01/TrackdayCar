@@ -15,12 +15,22 @@ function PostCar (){
 })
 
 async function postcar(e){
-     e.preventDefault()
+    // e.preventDefault()
      try{
-         console.log(PostCarbody)
+         
      let res = await axios.post(`${POSTCAR_URL}`,PostCarbody,
      {headers:{ 'Content-Type': 'application/json'}})
-     console.log(res)}catch(error){
+     SetPostCarbody({"model": "2021 BMW M4 Competition",
+     "Catagory": "luxury sports car",
+     "Performance": "503hp 3830lbs 8-speed auto/manuel",
+     "brand": "BMW",
+     "price":76500,
+     "intro": "Great car!",
+     
+     "photo":""})
+    
+    
+    }catch(error){
          console.log(error)
      }
      
