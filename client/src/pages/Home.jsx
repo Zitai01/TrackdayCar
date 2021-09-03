@@ -10,8 +10,6 @@ function Home(props){
                 key={car._id}
                 car={car}
                 showCar={showCar}
-            
-            
             />
         )
 
