@@ -4,7 +4,7 @@ const express = require('express')
 const cors = require('cors')
 const bodyParser = require('body-parser')
 const logger = require('morgan')
-
+const path = require('path')
 const PORT = process.env.PORT || 3001
 const db = require('./db')
 
