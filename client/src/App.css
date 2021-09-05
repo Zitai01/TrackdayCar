@@ -156,12 +156,12 @@ color: turquoise;
   border-bottom:1px solid lightblue
 }
 .QA{
-  height: 400px;
+  height: 200px;
   border-radius: 3px;
   border: 2px solid lightblue;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   font-size: 30px;
   color: #eee;
 }
