@@ -6,7 +6,7 @@ function CommentCard(props){
 async function deletecomment(commentId){
     
     let res = await axios.delete(`${DELETECOMMENT_URL}${commentId}`)
-    console.log(res)
+    
     window.location.reload(false)
 }
 
