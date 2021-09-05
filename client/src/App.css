@@ -156,6 +156,7 @@ color: turquoise;
   border-bottom:1px solid lightblue
 }
 .QA{
+  height: 400px;
   border-radius: 3px;
   border: 2px solid lightblue;
   display: flex;
@@ -197,5 +198,5 @@ div{
   background-color: #282c34;
 }
 .qustions{
-  color: white;
+  color: red;
 }
