@@ -156,6 +156,7 @@ color: turquoise;
   border-bottom:1px solid lightblue
 }
 .QA{
+  border-radius: 3px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
