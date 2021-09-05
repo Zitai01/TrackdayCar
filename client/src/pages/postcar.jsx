@@ -15,7 +15,7 @@ function PostCar (){
 })
 
 async function postcar(e){
-    // e.preventDefault()
+    
      try{
          
      let res = await axios.post(`${POSTCAR_URL}`,PostCarbody,
