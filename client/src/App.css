@@ -176,7 +176,8 @@ color: turquoise;
 
 .welcome{
   justify-content: center;
-  margin: 50px 500px 50px 500px;
+  height: 300px;
+  margin: 50px 300px 50px 300px;
   border-radius: 5px;
   border: 2px solid lightblue;
   display: flex;
