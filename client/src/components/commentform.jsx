@@ -16,12 +16,14 @@ function CommentForm (props){
     
 
     async function postcomment(e){
-       // e.preventDefault()
+     
         try{
             console.log(Postbody)
         let res = await axios.post(`${POSTCOMMENT_URL}`,Postbody,
         {headers:{ 'Content-Type': 'application/json'}})
-        console.log(res)}catch(error){
+
+
+        }catch(error){
             console.log(error)
         }
         
